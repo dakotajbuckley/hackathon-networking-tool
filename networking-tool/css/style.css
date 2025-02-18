@@ -1,0 +1,199 @@
+body {
+  font-family: "Arial", sans-serif;
+  /*   background-color: #4e0f0f; */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav > .nav-right {
+    display: flex;
+    align-items:center;
+  }
+  
+  nav > h1 {
+    font-size: 52px;
+    background: -webkit-linear-gradient(red, brown);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @media screen and (max-width: 500px){
+    nav > h1{
+      font-size: 36px;
+    }
+  }
+  
+  a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 20px;
+    color: black;
+  /*   -webkit-text-stroke: 0.5px white; */
+  }
+  
+  a:hover {
+    color: red;
+    transition: .2s;
+  }
+  
+  ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  li {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .submit-btn {
+    height: 30px;
+    width: 300px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: silver;
+    color: white;
+  }
+  
+  .submit-btn:hover {
+    color: black;
+    background-color: gold;
+    font-size: 18px;
+    transition: all .5s ease-out;
+    border: 1px solid #ad3535;
+  }
+  
+  input {
+    border: 1px solid red;
+    border-radius: 7px;
+    height: 25px;
+    width: 300px;
+  }
+  
+  input::placeholder {
+    padding-left: 10px;
+  }
+  
+  section > h2 {
+    font-size: 30px;
+    margin-left: 30px;
+  /*   -webkit-text-stroke: 0.5px white; */
+  }
+  
+  div > h2 {
+    color: white;
+    font-size: 30px;
+    -webkit-text-stroke: 0.5px white;
+  }
+  
+  .profile-container {
+    border: 1px solid red;
+    border-radius: 20px;
+    background-color: ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    margin: 0 10px;
+    background: radial-gradient(#f6ff9fba, #df0000);
+  }
+  
+  section {
+    margin-top: 8%;  
+  }
+  
+  table {
+    width: 95%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: white;
+  }
+  
+  th, td {
+    border: 1px solid silver; /* can't decide on black or silver AG */
+    padding: 15px;   
+  }
+  th{
+    background-color: #901b1bdb;
+    color: white;
+    line-height: 1.4; /* this prevents the th element from increasing in height when filter buttons are revealed upon mouseenter event */
+  }
+  th.category {
+    cursor: pointer;
+  }
+  
+  td input {
+    width: 20px;
+  }
+  
+  #profiles-table tbody tr:nth-child(even) {
+      background-color: #f4eed99e;
+  }
+  
+  
+  .sort {
+    display: none;
+  }
+  .sort-show {
+    display: inline;
+  }
+  
+  .sort-btn {
+    border: none;
+    background-color: transparent;
+  }
+  .ascending  {
+    padding-left: 2px;
+    padding-right: 0px;
+  }
+  .descending {
+    padding-left: 1px;
+    padding-right: 2px;
+  }
+  
+  
+  .dark-mode {
+    background-color: #1E1E1E;
+    transition: all .3s ease-out;
+  }
+  
+  .dark-font {
+    color: red;
+  }
+  
+  .light-font{
+    color: white;
+  }
+  
+  i {
+    cursor: pointer;
+  }
+  
+  i:hover {
+    color: red;
+    background-color: red;
+    transition: all .3s ease-out;
+  }
+  
+  
+  
+  

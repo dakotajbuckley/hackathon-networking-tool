@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <nav>
+      <h1>
+        100Devs Networking Tool
+      </h1>
+      <div class="nav-right">
+        <i class="fa-solid fa-circle-half-stroke fa-2xl" id="iconic"></i>
+<!--         <i class="fa-solid fa-circle-half-stroke fa-2xl fa-rotate-180" id="iconic"></i> -->
+        <a class="fontwhite" href="#">Log In</a>
+        <a class="fontwhite" href="#">Sign Up</a>
+      </div>
+    </nav>
+    
+    <div class="profile-container">
+      <h2>
+        ✨ Create A Profile! ✨
+      </h2>
+      <form>
+        <ul>
+          <li><label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="💁 Name" aria-label="name" required></li>
+
+         <li><label for="email"></label> 
+          <input type="email" name="email" id="email" placeholder="✉️ Email" aria-label="email" required></li>
+
+          <li><label for="jobtitle"></label> 
+          <input type="text" name="jobtitle" id="job_title" placeholder="🌟 Job Title" aria-label="job_title"></li>
+
+
+          <li><label for="company"></label> 
+              <input type="text" name="company" id="company" placeholder="🏬 Company" aria-label="company"></li>
+
+          <li><label for="spark"></label> 
+               <input type="text" name="spark" id="spark" placeholder="✨ Spark" aria-label="spark"></li>
+
+          <li><label for="coffeechat"></label> 
+               <input type="text" name="coffeechat" id="coffeechat" placeholder="☕️ Coffee Chat - Yes / No" aria-label="coffeechat"></li>
+          
+          <li><label for="date"></label> 
+              <input type="date" id="date" name="date" value="" min="" max="" aria-label="date_initiated"></li>
+
+          <!--<li> <fieldset>
+              <legend>Coffee Chat?</legend>
+              <input type="radio" name="cofeechat" id="coffeechat" value="yes" checked>Yes
+              <label for="yes"></label>
+              <input type="radio" name="coffeechat" id="coffeechat" value="no">No
+              <label for="no"></label>
+              </fieldset>
+          </li> -->
+        </ul>
+          <!--submit button-->
+         <input class="submit-btn" type="submit" name="" id="submit">
+      </form>
+    </div>
+    
+
+    <!--   ↓↓↓↓↓↓↓↓↓
+  Create the profile section
+  Create table
+  Create header row with information to display
+      ↓↓↓↓↓↓↓↓↓
+-->
+
+<section>
+  <h2 id="test">
+    Your Networking Profiles
+  </h2>
+
+        
+  <table id="profiles-table">
+    <thead>
+      <tr>
+        <th>
+          <button id="deleteButton">Delete</button>
+        </th>
+        <th id="job-title-category" class="category">Job Title
+          <button id="job-ascending" class="job-title-sort sort sort-btn ascending">🔼</button>
+          <button id="job-descending" class="job-title-sort sort sort-btn descending">🔽</button>
+        </th>
+        <th id="name-category" class="category">Name
+          <button id="name-ascending" class="name-sort sort sort-btn ascending">🔼</button>
+          <button id="name-descending" class="name-sort sort sort-btn descending">🔽</button>
+        </th>
+        <th id="email-category" class="category">Email
+          <button class="email-sort sort sort-btn ascending">🔼</button>
+          <button class="email-sort sort sort-btn descending">🔽</button>
+        </th>
+        <th id="date-category" class="category">Date
+          <button class="date-sort sort sort-btn ascending">🔼</button>
+          <button class="date-sort sort sort-btn descending">🔽</button>
+        </th>
+        <th id="company-category" class="category">Company
+          <button class="company-sort sort sort-btn ascending">🔼</button>
+          <button class="company-sort sort sort-btn descending">🔽</button>
+        </th>
+        <th id="spark-category" class="category">Spark
+          <button class="spark-sort sort sort-btn ascending">🔼</button>
+          <button class="spark-sort sort sort-btn descending">🔽</button>
+        </th>
+        <th id="coffee-chat-category" class="category">Coffee Chat
+          <button class="coffee-chat-sort sort sort-btn ascending">🔼</button>
+          <button class="coffee-chat-sort sort sort-btn descending">🔽</button>
+        </th>     
+      </tr>
+     </thead>
+    <tbody>
+<!--       <tr>
+        <td>Kota</td>
+        <td>kota@gmail.com</td>
+        <td>SE</td>
+        <td>07/24/2018</td>
+        <td>facebook</td>
+        <td>spark</td>
+        <td>yes</td>
+      </tr> -->
+    </tbody>
+  </table>
+  
+</section>
+    
+<script src="https://cdn.jsdelivr.net/npm/appwrite@17.0.0"></script>
+
+<script type="module" src="script.js"></script>
+ 
+</body>
+</html>
+
